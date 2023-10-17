@@ -6,7 +6,7 @@ import IndexPage from './pages/IndexPage';
 function App() {
   return (
     <ChakraProvider>
-      <HankoAuth />
+      {/* <HankoAuth /> */}
       <IndexPage />
     </ChakraProvider>
   )

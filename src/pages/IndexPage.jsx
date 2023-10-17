@@ -1,11 +1,15 @@
 import React from "react";
 import MainDrawer from "../components/MainDrawer";
+import Hero from "../components/Hero";
+import Header from "../components/Header";
 
 
 function IndexPage(){
     return(
         <>
-        <MainDrawer />        
+        <Header />
+        <MainDrawer />  
+        <Hero />      
         </>
     )
 }
