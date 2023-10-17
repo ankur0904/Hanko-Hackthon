@@ -55,7 +55,7 @@ export default function Header() {
                         fontFamily={'heading'}
                         color={useColorModeValue('gray.800', 'white')}
                     >
-                        Logo
+                        Upload|Here
                     </Text>
 
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -69,9 +69,6 @@ export default function Header() {
                     direction={'row'}
                     spacing={6}
                 >
-                    <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
-                        Sign In
-                    </Button>
                     <Button
                         as={'a'}
                         display={{ base: 'none', md: 'inline-flex' }}
@@ -79,12 +76,12 @@ export default function Header() {
                         fontWeight={600}
                         color={'white'}
                         bg={'pink.400'}
-                        href={'#'}
+                        href={'contactus'}
                         _hover={{
                             bg: 'pink.300',
                         }}
                     >
-                        Sign Up
+                        Contact Us
                     </Button>
                 </Stack>
             </Flex>
@@ -246,41 +243,26 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
     {
-        label: 'Inspiration',
+        label: 'Our Features',
         children: [
             {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
+                label: 'Support different types of file format',
+                subLabel: 'We support different types of files e.g. pdf, jpg, jpeg, txt etc.',
                 href: '#',
             },
             {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
+                label: 'Secure authentication is provided',
+                subLabel: 'Our web application is highly secure with the authentication and authorization.',
                 href: '#',
             },
         ],
     },
     {
-        label: 'Find Work',
-        children: [
-            {
-                label: 'Job Board',
-                subLabel: 'Find your dream design job',
-                href: '#',
-            },
-            {
-                label: 'Freelance Projects',
-                subLabel: 'An exclusive list for contract work',
-                href: '#',
-            },
-        ],
+        label: 'Help & Support',
+        href: 'help&support',
     },
     {
-        label: 'Learn Design',
-        href: '#',
-    },
-    {
-        label: 'Hire Designers',
-        href: '#',
-    },
+        label: 'About Us',
+        href: 'aboutus'
+    }
 ];

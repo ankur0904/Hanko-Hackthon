@@ -21,8 +21,8 @@ function MainDrawer() {
   
     return (
       <>
-        <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-          Open
+        <Button ref={btnRef} colorScheme='teal' onClick={onOpen} m='3'>
+          Drawer
         </Button>
         <Drawer
           isOpen={isOpen}

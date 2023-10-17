@@ -10,7 +10,7 @@ import HighlightTextHero from './HighlightTextHero';
 
 function Hero() {
     return (
-        <VStack ml='40'>
+        <VStack m='8'>
             <Container
                 maxW='550px'
                 height='300px'
