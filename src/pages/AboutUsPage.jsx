@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import { Text, Stack, Box, Heading, Link } from "@chakra-ui/react";
+import { Text, Stack, Box, Heading } from "@chakra-ui/react";
 
 function AboutUsPage() {
     return (

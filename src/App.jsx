@@ -4,14 +4,20 @@ import { ChakraProvider } from '@chakra-ui/react'
 import IndexPage from './pages/IndexPage';
 import AboutUsPage from './pages/AboutUsPage';
 import HelpAndSupport from './pages/HelpAndSupport';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ContactUsPage from './pages/ContactUsPage';
 
 function App() {
   return (
     <ChakraProvider>
-      {/* <HankoAuth /> */}
-      {/* <IndexPage /> */}
-      {/* <AboutUsPage /> */}
-      <HelpAndSupport />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<IndexPage />} />
+          <Route path="/help&support" element={<HelpAndSupport />} />
+          <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/contactus" element={<ContactUsPage />} />
+        </Routes>
+      </BrowserRouter>
     </ChakraProvider>
   )
 }
