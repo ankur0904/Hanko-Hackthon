@@ -1,3 +1,4 @@
+import React from "react";
 import {
     Box,
     Flex,
@@ -50,13 +51,16 @@ export default function Header() {
                     />
                 </Flex>
                 <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-                    <Text
-                        textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-                        fontFamily={'heading'}
+                    <Box
+                        as="a"
+                        p={2}
+                        href="/"
+                        fontSize={'xl'}
+                        fontWeight={500}
                         color={useColorModeValue('gray.800', 'white')}
                     >
                         Upload|Here
-                    </Text>
+                    </Box>
 
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
                         <DesktopNav />
