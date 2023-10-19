@@ -6,9 +6,30 @@ import {
     Text,
     Heading
 } from '@chakra-ui/react';
-import HighlightTextHero from './HighlightTextHero';
+import { createClient } from '@supabase/supabase-js'
+import HighlightTextHero from './HighlightTextHero'
+import { useEffect, useState } from 'react';
+
+const supabaseUrl = 'https://aysmbympqhddbtawzxrm.supabase.co'
+const supabaseKey = process.env.REACT_APP_SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+console.log(process.env.REACT_APP_SUPABASE_KEY);
+
 
 function Hero() {
+
+    const [userName, setUserName] = useState('');
+    useEffect(() => {
+        setUserName('new');
+    }, [userName]);
+    const handleFileUpload = (event) => {
+        console.log(event.target.files[0].name);
+        const avatarFile = event.target.files[0]
+        const { data, error } = supabase.storage.from('avatars').upload(`${userName}/${event.target.files[0].name}`, avatarFile, {
+            cacheControl: '3600',
+            upsert: false
+        })
+    }
     return (
         <VStack m='8'>
             <Container
@@ -33,6 +54,7 @@ function Hero() {
                     aria-hidden="true"
                     accept="image/*,.pdf,.doc,.docx,.txt"
                     opacity='0'
+                    onChange={handleFileUpload} // add onChange event listener
                 />
             </Container>
             <HighlightTextHero />
