@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import HighlightTextHero from './HighlightTextHero';
 import { useEffect, useState } from 'react';
+import Header from './Header';;
 
 const supabaseUrl = 'https://aysmbympqhddbtawzxrm.supabase.co';
 const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
@@ -10,9 +11,11 @@ console.log(supabaseKey);
 function List() {
   const [userDir, setUserDir] = useState(''); // Set a default directory
   const [fileList, setFileList] = useState([]);
+  const [isButton, setIsButton] = useState(true);
 
   function handleClick() {
     setUserDir('new');
+    setIsButton(false);
   }
 
   async function listAllFiles() {
@@ -37,16 +40,19 @@ function List() {
 
   return (
     <>
+      <Header />
       <div>
         {fileList.map((item) => (
           <img
+            className='images'
             key={item.name}
             src={`https://aysmbympqhddbtawzxrm.supabase.co/storage/v1/object/public/avatars/new/${item.name}`}
             alt=""
           />
         ))}
       </div>
-          <button onClick={handleClick}>Click me</button>
+
+      {isButton && <button className='listImageButton' onClick={handleClick}>Click here to see your content</button>}
     </>
   );
 }
