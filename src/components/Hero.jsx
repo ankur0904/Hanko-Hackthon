@@ -4,7 +4,8 @@ import {
     VStack,
     Stack,
     Text,
-    Heading
+    Heading,
+    useToast
 } from '@chakra-ui/react';
 import { createClient } from '@supabase/supabase-js'
 import HighlightTextHero from './HighlightTextHero'
@@ -17,7 +18,7 @@ console.log(process.env.REACT_APP_SUPABASE_KEY);
 
 
 function Hero() {
-
+    const toast = useToast()
     const [userName, setUserName] = useState('');
     useEffect(() => {
         setUserName('new');
@@ -29,6 +30,23 @@ function Hero() {
             cacheControl: '3600',
             upsert: false
         })
+        if (!error) {
+            toast({
+                title: 'Image uploaded 😊',
+                description: "We've created your account for you.",
+                status: 'success',
+                duration: 9000,
+                isClosable: true,
+            })
+        }else{
+            toast({
+                title: 'Sorry!  😔',
+                description: error.message,
+                status: 'error',
+                duration: 9000,
+                isClosable: true,
+            })
+        }
     }
     return (
         <VStack m='8'>
