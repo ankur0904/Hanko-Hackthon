@@ -33,7 +33,7 @@ function Hero() {
         if (!error) {
             toast({
                 title: 'Image uploaded 😊',
-                description: "We've created your account for you.",
+                description: "Your image has been uploaded successfully.",
                 status: 'success',
                 duration: 9000,
                 isClosable: true,
