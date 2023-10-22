@@ -30,3 +30,20 @@
     box-shadow: 7px 7px 5px #c8c6c8;
     border-radius: 14px;
 }
+
+.flex {
+    display: flex;
+  }
+  
+  .min-h-screen {
+    min-height: 75vh;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  

@@ -1,7 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
 import HighlightTextHero from './HighlightTextHero';
 import { useEffect, useState } from 'react';
-import Header from './Header';;
+import Header from './Header';
+import userId from '../config/config';
 
 const supabaseUrl = 'https://aysmbympqhddbtawzxrm.supabase.co';
 const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
@@ -46,7 +47,7 @@ function List() {
           <img
             className='images'
             key={item.name}
-            src={`https://aysmbympqhddbtawzxrm.supabase.co/storage/v1/object/public/avatars/new/${item.name}`}
+            src={`https://aysmbympqhddbtawzxrm.supabase.co/storage/v1/object/public/avatars/${userId}/${item.name}`}
             alt=""
           />
         ))}

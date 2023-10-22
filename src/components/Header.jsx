@@ -12,7 +12,6 @@ import {
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
     useDisclosure,
 } from '@chakra-ui/react';
 import {
@@ -22,9 +21,11 @@ import {
     ChevronRightIcon,
 } from '@chakra-ui/icons';
 
-export default function Header() {
+export default function Header(props) {
+    function handleLogOut(){
+        props.setUser(null);
+    }
     const { isOpen, onToggle } = useDisclosure();
-
     return (
         <Box>
             <Flex
@@ -80,7 +81,8 @@ export default function Header() {
                         fontWeight={600}
                         color={'white'}
                         bg={'pink.400'}
-                        href={'contactus'}
+                        // href={'contactus'}
+                        onClick={handleLogOut}
                         _hover={{
                             bg: 'pink.300',
                         }}

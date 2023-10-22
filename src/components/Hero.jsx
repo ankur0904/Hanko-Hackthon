@@ -10,6 +10,7 @@ import {
 import { createClient } from '@supabase/supabase-js'
 import HighlightTextHero from './HighlightTextHero'
 import { useEffect, useState } from 'react';
+import userId from '../config/config';
 
 const supabaseUrl = 'https://aysmbympqhddbtawzxrm.supabase.co'
 const supabaseKey = process.env.REACT_APP_SUPABASE_KEY
@@ -21,7 +22,7 @@ function Hero() {
     const toast = useToast()
     const [userName, setUserName] = useState('');
     useEffect(() => {
-        setUserName('new');
+        setUserName(userId);
     }, [userName]);
     const handleFileUpload = (event) => {
         console.log(event.target.files[0].name);

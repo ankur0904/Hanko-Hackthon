@@ -23,7 +23,7 @@ function MainDrawer() {
     <>
       <Flex justifyContent="center">
         <Button ref={btnRef} colorScheme='teal' onClick={onOpen} m='3'>
-          Drawer
+          See your photos
         </Button>
       </Flex>
       <Drawer

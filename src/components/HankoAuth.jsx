@@ -3,12 +3,17 @@ import { register } from "@teamhanko/hanko-elements";
 
 const hankoApi = process.env.REACT_APP_KEY;
 
+
 export default function HankoAuth() {
-    useEffect(() => {
+  useEffect(() => {
     register(hankoApi).catch((error) => {
       // handle error
     });
   }, []);
 
-  return <hanko-auth />;
+  return (
+    <div className="flex min-h-screen justify-center items-center">
+      <hanko-auth/>
+    </div>
+  );
 }
