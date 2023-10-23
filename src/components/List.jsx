@@ -8,7 +8,6 @@ const supabaseUrl = 'https://aysmbympqhddbtawzxrm.supabase.co';
 const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
-console.log(supabaseKey);
 function List() {
   const [userDir, setUserDir] = useState(''); // Set a default directory
   const [fileList, setFileList] = useState([]);
