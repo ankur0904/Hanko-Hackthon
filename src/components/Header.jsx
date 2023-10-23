@@ -22,9 +22,6 @@ import {
 } from '@chakra-ui/icons';
 
 export default function Header(props) {
-    function handleLogOut(){
-        props.setUser(null);
-    }
     const { isOpen, onToggle } = useDisclosure();
     return (
         <Box>
@@ -81,8 +78,7 @@ export default function Header(props) {
                         fontWeight={600}
                         color={'white'}
                         bg={'pink.400'}
-                        // href={'contactus'}
-                        onClick={handleLogOut}
+                        href={'contactus'}
                         _hover={{
                             bg: 'pink.300',
                         }}
