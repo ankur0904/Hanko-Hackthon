@@ -6,7 +6,6 @@ import HankoAuth from "../components/HankoAuth";
 import userId from "../config/config.js"
 
 function IndexPage() {
-    console.log(userId)
     const [user, setUser] = useState(null);
     useEffect(() => {
         if (userId !== null) {
