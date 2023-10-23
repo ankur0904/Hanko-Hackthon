@@ -15,7 +15,6 @@ import userId from '../config/config';
 const supabaseUrl = 'https://aysmbympqhddbtawzxrm.supabase.co'
 const supabaseKey = process.env.REACT_APP_SUPABASE_KEY
 const supabase = createClient(supabaseUrl, supabaseKey)
-console.log(process.env.REACT_APP_SUPABASE_KEY);
 
 
 function Hero() {
