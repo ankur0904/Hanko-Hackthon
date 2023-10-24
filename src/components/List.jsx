@@ -14,7 +14,7 @@ function List() {
   const [isButton, setIsButton] = useState(true);
 
   function handleClick() {
-    setUserDir('new');
+    setUserDir(userId);
     setIsButton(false);
   }
 
