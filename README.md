@@ -47,9 +47,10 @@ The Image Storage Web App is versatile and can be used in various scenarios:
 
 ## Technologies Used
 
-- [React](https://react.dev/)
-- [Supabase](https://supabase.com/)
 - [Hanko Auth](https://www.hanko.io/)
+- [Supabase](https://supabase.com/)
+- [Chakra-UI](https://chakra-ui.com/)
+- [React](https://react.dev/)
 
 ## Installation
 
