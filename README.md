@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Image Storage Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The **Image Storage Web App** is a web application that allows users to easily upload and store their images on the platform. Users can later retrieve their uploaded images, making it a convenient solution for personal image storage.
 
-### `npm start`
+### Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Effortless Image Upload**: Uploading your images to our platform is as easy as a few clicks. Simply select your images, and we'll take care of the rest.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Secure Image Storage**: We prioritize the security of your images. Our platform is built on Supabase, a robust backend solution, to ensure that your images are stored safely and privately.
 
-### `npm test`
+- **Quick Image Retrieval**: Need to access your images? With our user-friendly interface, you can retrieve your stored images at any time, from any device with an internet connection.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Hanko Authentication**: We've integrated Hanko Auth to enhance the security of your account. Rest assured that your data and images are well-protected.
 
-### `npm run build`
+### Use Cases
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Image Storage Web App is versatile and can be used in various scenarios:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Personal Image Storage**: Store your precious memories, family photos, or travel pictures securely on our platform, knowing they're just a click away when you want to reminisce.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Professional Image Hosting**: If you're a professional photographer, artist, or designer, our app can serve as a convenient image hosting solution for your portfolio or projects.
 
-### `npm run eject`
+## Table of Contents
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Features](#features)
+- [Demo](#demo)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Contributing](#contributing)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Image Upload**: Users can upload their images to the web app, making it a secure and convenient storage solution.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Image Retrieval**: Users can easily retrieve their uploaded images at any time, ensuring their images are always accessible.
 
-## Learn More
+- **User-Friendly Dashboard**: The dashboard provides an intuitive and user-friendly interface, giving you an at-a-glance view of your image library's status, including the total number of images, folders, and tags.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Scalability**: Our platform is designed to grow with your needs. Whether you have a small collection or a vast image library, we can handle it. No need to worry about storage limits or performance issues.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Demo
 
-### Code Splitting
+[Include a link to a live demo if available, or screenshots to showcase the application's user interface.]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Used
 
-### Analyzing the Bundle Size
+- [React](https://react.dev/)
+- [Supabase](https://supabase.com/)
+- [Hanko Auth](https://www.hanko.io/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Installation
 
-### Making a Progressive Web App
+To run this project locally, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+**Clone the repository**
+```bash
+git clone https://github.com/yourusername/Hanko-Hackthon.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Navigate to the project directory**
+```bash
+cd Hanko-Hackthon
+```
 
-### Deployment
+**Install dependencies**
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Start the project**
+```bash
+npm start
+```
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Please read the contributing guide here.*
