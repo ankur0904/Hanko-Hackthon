@@ -43,17 +43,19 @@ The Image Storage Web App is versatile and can be used in various scenarios:
 ## Demo
 
 **Live URL** https://hanko-hackthon.vercel.app/
+<div style="text-align: center;">
+    <img src="images/a.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+    <img src="images/b.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+    <img src="images/c.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+    <img src="images/d.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+    <img src="images/e.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+    <img src="images/f.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+    <img src="images/g.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+    <img src="images/h.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+    <img src="images/i.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+    <img src="images/j.png" style="max-width: 100%; height: auto; width: 600px; display: block; margin: auto;"/>
+</div>
 
-<img src="/images/a.png" style="height: 100px; width:100px;"/>
-<img src="/images/b.png" style="height: 100px; width:100px;"/>
-<img src="/images/c.png" style="height: 100px; width:100px;"/>
-<img src="/images/d.png" style="height: 100px; width:100px;"/>
-<img src="/images/e.png" style="height: 100px; width:100px;"/>
-<img src="/images/f.png" style="height: 100px; width:100px;"/>
-<img src="/images/g.png" style="height: 100px; width:100px;"/>
-<img src="/images/h.png" style="height: 100px; width:100px;"/>
-<img src="/images/i.png" style="height: 100px; width:100px;"/>
-<img src="/images/j.png" style="height: 100px; width:100px;"/>
 
 
 ## Technologies Used
